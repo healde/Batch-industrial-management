@@ -112,31 +112,6 @@ echo.
 goto :EOF
 
 
-
-
-:questionSearchedType
-    set "searchedType="
-
-    set /p searchedType= "rechercher parmi les fichier (f) ou les dossiers (d) : "
-
-    if "%searchedType%"=="menu" (  set "stop=true"
-                                   goto :EOF
-    ) else ( 
-        if "%searchedType%"=="f" ( goto :EOQST )
-        if "%searchedType%"=="d" ( goto :EOQST
-    ) else (
-        goto :questionSearchedType))
-:EOQST
-    echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-    if "%searchedType%"=="f" (          echo :     Recherche parmi les fichiers # searchedType=%searchedType%
-    ) else ( if "%searchedType%"=="d" ( echo :     Recherche parmi les dossiers # searchedType=%searchedType%
-    ) )
-    echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-    echo.
-
-goto :EOF
-
-
 :questionTargetType
     set "searchedType="
 
@@ -757,6 +732,7 @@ goto :EOF
         ) ) )
 
     goto :EOF
+
 
 
 
