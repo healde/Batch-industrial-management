@@ -4,7 +4,7 @@ Short standalone script for managing files and folders within an industrial proc
 I mean by industrial process a system built on folders structured under functional models and containing some reference files for the different services.
 It provides supervision over each unit that is produced all along fabrication process, but is also a simple way to present project in modular development. 
 
-So I made three main functions, to manipulate on all over similar files or folders into project parent. which are copy, extract and rename :
+So I made three main functions, which are copy, extract and rename, to manipulate over all similar files or folders into project parent :
 
 
 - copy once to all matching sub-directories
